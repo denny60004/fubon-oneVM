@@ -1,0 +1,64 @@
+syntax = "proto3";
+package proto;
+
+import "google/api/annotations.proto";
+import "messages.proto";
+
+option csharp_namespace = "Blkio.Chimera.Api";
+option go_package = "chimera";
+option java_package = "io.blk.chimera.api";
+option java_multiple_files = true;
+
+// `grpc` contains Simple service definition which can be used to communicate with Chimera
+// All request and response protocol buffer message types are defined in -
+// `github.com/blk-io/chimera-api/protofiles/messages.proto`
+// Example Usage :
+//      receiveReq := protofiles.ReceiveRequest{..}
+//      conn, err = grpc.Dial(...)
+//      c := protofiles.NewClientClient(conn)
+//      resp, err:= c.Receive(context.Background(), &receiveReq)
+// This resp can be used to get the response. We can get the values in resp using `messages.proto` file
+// Eg. -> response := protofiles.ReceiveResponse{...}
+// `response` will contain the necessary information from response received from server.
+
+
+service Client {
+    // Get version of the server running
+    rpc Version(ApiVersion) returns (ApiVersion) {
+        option (google.api.http) = {
+            post: "/version"
+            body: "*"
+        };
+    }
+    // Checks if the server is running
+    rpc Upcheck(UpCheckResponse) returns (UpCheckResponse) {
+        option (google.api.http) = {
+            post: "/upcheck"
+            body: "*"
+        };
+    }
+
+    // Used to store a transaction in the Chimera node
+    rpc Send(SendRequest) returns (SendResponse);
+    // Retrieve a transaction from the Chimera node
+    rpc Receive(ReceiveRequest) returns (ReceiveResponse);
+
+    // Update the partyinfo with response from all the nodes connnected to the node
+    rpc UpdatePartyInfo(PartyInfo) returns (PartyInfoResponse) {
+        option (google.api.http) = {
+            post: "/partyinfo"
+            body: "*"
+        };
+    }
+
+    // Propogate payload to remote node
+    rpc Push(PushPayload) returns (PartyInfoResponse) {
+        option (google.api.http) = {
+            post: "/push"
+            body: "*"
+        };
+    }
+
+    rpc Delete(DeleteRequest) returns (DeleteRequest);
+    rpc Resend(ResendRequest) returns (ResendResponse);
+}
