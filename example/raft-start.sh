@@ -19,6 +19,8 @@ mkdir -p qdata/logs
 echo "[*] Starting Crux nodes"
 ./crux-start.sh
 
+sleep 5
+
 echo "[*] Starting Ethereum nodes with ChainID and NetworkId of $NETWORK_ID"
 set -v
 ARGS="--nodiscover --verbosity 5 --networkid $NETWORK_ID --raft --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints"
