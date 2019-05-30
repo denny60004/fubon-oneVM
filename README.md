@@ -8,7 +8,7 @@
 ## Build Crux
 
         $ cd crux
-        $ make setup && make
+        $ make
 
 ## Setup 4 nodes
 
