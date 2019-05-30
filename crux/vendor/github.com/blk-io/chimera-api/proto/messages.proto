@@ -1,0 +1,99 @@
+syntax = "proto3";
+package proto;
+
+import "google/api/annotations.proto";
+
+option csharp_namespace = "Blkio.Chimera.Api";
+option go_package = "chimera";
+option java_package = "io.blk.chimera.api";
+option java_multiple_files = true;
+
+// `messages` contains serialized protocol buffer messages used to communicate with Chimera nodes
+// The gRPC service definitions using the below proto files are defined in
+// `github.com/blk-io/chimera-api/grpc.proto` -- Refer to the same for example usage
+
+// The Apiversion on which the server is running
+message ApiVersion {
+    string version = 1;
+}
+
+// The server response from an `upcheck` request
+message UpCheckResponse {
+    string message = 1;
+}
+
+// Store a transaction payload
+message SendRequest{
+    // The payload of the transaction to be sent
+    bytes payload = 1;
+    // The key of the Sender
+    string from = 2;
+    // The keys of all the Receipients who are privy to the transaction
+    repeated string to = 3;
+}
+// Response from the server for the SendRequest
+message SendResponse {
+    // The transaction hash is returned
+    bytes key = 1;
+}
+
+// Retrieve a transaction payload
+message ReceiveRequest {
+    // The transaction hash to be queried
+    bytes key = 1;
+    // The Senders key
+    string to = 2;
+}
+// Response for ReceiveRequest -> contains the transaction payload
+message ReceiveResponse {
+    bytes payload = 1;
+}
+
+// Node information
+message PartyInfo {
+    // the URL identifying this node
+    string url = 1;
+    // public key of the respective URL
+    map<string, bytes> recipients = 2;
+    // All the URLs opf the connected nodes
+    map<string, bool> parties = 3;
+}
+// Payload consisting of the partyinfo of the connected party
+message PartyInfoResponse {
+    bytes payload = 1;
+}
+
+// The Encrypted payload used to propogate the new transaction payload to other Chimera nodes
+message EncryptedPayload{
+    bytes sender = 1;
+    bytes cipherText = 2;
+    bytes nonce = 3;
+    repeated bytes reciepientBoxes = 4;
+    bytes reciepientNonce = 5;
+}
+// The message type to sent over to other Chimera nodes.
+message PushPayload{
+    EncryptedPayload ep = 1;
+    // Encoded transaction information
+    bytes encoded = 2;
+}
+
+message DeleteRequest {
+     bytes key = 1;
+}
+
+// ResendRequest is used to resend previous transactions.
+// There are two types of supported request.
+// 1. All transactions associated with a node, in which case the Key field should be omitted.
+// 2. A specific transaction with the given key value.
+message ResendRequest {
+    // Type is the resend request type. It should be either "all" or "individual" depending on if
+    // you want to request an individual transaction, or all transactions associated with a node.
+    string Type = 1;
+    bytes PublicKey = 2;
+    bytes Key = 3;
+}
+
+message ResendResponse {
+    bytes encoded = 1;
+}
