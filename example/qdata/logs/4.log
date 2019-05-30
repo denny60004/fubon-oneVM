@@ -1,0 +1,399 @@
+appending output to nohup.out
+DEBUG[05-30|12:18:12.331] Sanitizing Go's GC trigger               percent=100
+INFO [05-30|12:18:12.333] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[05-30|12:18:12.333] FS scan times                            list=124.663µs set=9.217µs diff=5.184µs
+TRACE[05-30|12:18:12.333] Handled keystore changes                 time=182.925µs
+TRACE[05-30|12:18:12.334] Started watching keystore folder         path=/Users/denny/Desktop/Fubon/example/qdata/dd4/keystore
+INFO [05-30|12:18:12.343] Starting peer-to-peer node               instance=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+INFO [05-30|12:18:12.343] Allocated cache and file handles         database=/Users/denny/Desktop/Fubon/example/qdata/dd4/geth/chaindata cache=768 handles=4611686018427387903
+INFO [05-30|12:18:12.359] Initialised chain configuration          config="{ChainID: 10 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 1 EIP155: 0 EIP158: 1 Byzantium: 1 IsQuorum: true Constantinople: <nil> Engine: unknown}"
+WARN [05-30|12:18:12.360] Ethash used in full fake mode 
+INFO [05-30|12:18:12.360] Initialising Ethereum protocol           versions="[63 62]" network=10
+INFO [05-30|12:18:12.360] Loaded most recent local header          number=0 hash=6a6605…6243a2 td=0 age=50y1mo2w
+INFO [05-30|12:18:12.360] Loaded most recent local full block      number=0 hash=6a6605…6243a2 td=0 age=50y1mo2w
+INFO [05-30|12:18:12.360] Loaded most recent local fast block      number=0 hash=6a6605…6243a2 td=0 age=50y1mo2w
+DEBUG[05-30|12:18:12.361] Reinjecting stale transactions           count=0
+INFO [05-30|12:18:12.361] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[05-30|12:18:12.361] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [05-30|12:18:12.367] starting raft protocol handler 
+INFO [05-30|12:18:12.367] loaded the latest applied index          lastAppliedIndex=0
+INFO [05-30|12:18:12.367] replaying WAL 
+DEBUG[05-30|12:18:12.368] TCP listener up                          addr=[::]:21003
+TRACE[05-30|12:18:12.368] Accepted connection                      addr=127.0.0.1:49521
+INFO [05-30|12:18:12.370] New local node record                    seq=1 id=c75f7dcb9fd6063f ip=127.0.0.1 udp=0 tcp=21003
+INFO [05-30|12:18:12.370] Started P2P networking                   self="enode://3d9ca5956b38557aba991e31cf510d4df641dce9cc26bfeb7de082f0c07abb6ede3a58410c8f249dabeecee4ad3979929ac4c7c496ad20b8cfdd061b7401b4f5@127.0.0.1:21003?discport=0"
+WARN [05-30|12:18:12.370] Removing static dial candidate           id=0x44d9af0        addr=127.0.0.1:21003 err="is self"
+TRACE[05-30|12:18:12.370] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:21000"
+TRACE[05-30|12:18:12.370] New dial task                            task="staticdial 995dbe18829f1aff 127.0.0.1:21001"
+TRACE[05-30|12:18:12.370] New dial task                            task="staticdial c39143f98d04e97b 127.0.0.1:21002"
+TRACE[05-30|12:18:12.371] Dial error                               task="staticdial c39143f98d04e97b 127.0.0.1:21002" err="dial tcp 127.0.0.1:21002: connect: connection refused"
+DEBUG[05-30|12:18:12.371] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:18:12.371] Dial task done                           task="staticdial c39143f98d04e97b 127.0.0.1:21002"
+TRACE[05-30|12:18:12.371] Dial error                               task="staticdial 995dbe18829f1aff 127.0.0.1:21001" err="dial tcp 127.0.0.1:21001: connect: connection refused"
+DEBUG[05-30|12:18:12.371] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:18:12.371] Dial task done                           task="staticdial 995dbe18829f1aff 127.0.0.1:21001"
+TRACE[05-30|12:18:12.373] Quorum permissioning                     id=7577115fd9184a27 addr=127.0.0.1:49521 conn=inbound EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 Current Node ID=c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest=nil Connection ID=7577115fd9184a27 Connection String=7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966
+TRACE[05-30|12:18:12.386] Node Permissioning is Enabled.           id=7577115fd9184a27 addr=127.0.0.1:49521 conn=inbound
+DEBUG[05-30|12:18:12.386] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 file=permissioned-nodes.json
+DEBUG[05-30|12:18:12.387] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:12.387] isNodePermissioned                       connection=INCOMING nodename=7577115fd9184a27da527128d8dba507 ALLOWED-BY=c75f7dcb9fd6063f0ada0998f512a992
+TRACE[05-30|12:18:12.400] Quorum permissioning                     id=7577115fd9184a27 addr=127.0.0.1:21000 conn=staticdial EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 Current Node ID=c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest="enode://ac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef@127.0.0.1:21000?discport=0&raftport=50401" Connection ID=7577115fd9184a27 Connection String=7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966
+TRACE[05-30|12:18:12.541] Node Permissioning is Enabled.           id=7577115fd9184a27 addr=127.0.0.1:21000 conn=staticdial
+TRACE[05-30|12:18:12.680] Node Permissioning                       Connection Direction=OUTGOING
+DEBUG[05-30|12:18:12.691] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 file=permissioned-nodes.json
+DEBUG[05-30|12:18:12.692] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:12.692] isNodePermissioned                       connection=OUTGOING nodename=7577115fd9184a27da527128d8dba507 ALLOWED-BY=c75f7dcb9fd6063f0ada0998f512a992
+DEBUG[05-30|12:18:12.692] Adding p2p peer                          name=Geth/v1.8.18-stable-... addr=127.0.0.1:21000 peers=1
+TRACE[05-30|12:18:12.692] connection set up                        id=7577115fd9184a27 addr=127.0.0.1:21000 conn=staticdial inbound=false
+TRACE[05-30|12:18:12.692] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:21000"
+TRACE[05-30|12:18:12.692] New dial task                            task="wait for dial hist expire (29.678914961s)"
+TRACE[05-30|12:18:12.692] Starting protocol eth/63                 id=7577115fd9184a27 conn=staticdial
+DEBUG[05-30|12:18:12.692] Ethereum peer connected                  id=7577115fd9184a27 conn=staticdial name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+TRACE[05-30|12:18:12.697] Rejected peer                            id=7577115fd9184a27 addr=127.0.0.1:49521 conn=inbound    err="already connected"
+DEBUG[05-30|12:18:12.700] Ethereum handshake failed                id=7577115fd9184a27 conn=staticdial err=EOF
+DEBUG[05-30|12:18:12.722] Removing p2p peer                        id=7577115fd9184a27 conn=staticdial duration=30.195ms peers=0 req=true err="already connected"
+TRACE[05-30|12:18:12.700] Setting up connection failed             addr=127.0.0.1:49521 err="already connected"
+INFO [05-30|12:18:12.757] loading WAL                              term=0 index=0
+INFO [05-30|12:18:12.910] startRaft                                raft ID=4
+INFO [05-30|12:18:12.911] starting a new raft log                  initial cluster size of=4
+2019-05-30 12:18:12.912225 I | rafthttp: starting peer 1...
+2019-05-30 12:18:12.912295 I | rafthttp: started HTTP pipelining with peer 1
+TRACE[05-30|12:18:12.913] Adding static node                       node="enode://ac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef@127.0.0.1:0?discport=21000&raftport=50401"
+TRACE[05-30|12:18:12.913] Accepted connection                      addr=127.0.0.1:49530
+2019-05-30 12:18:12.913923 I | rafthttp: started streaming with peer 1 (writer)
+2019-05-30 12:18:12.918117 I | rafthttp: started peer 1
+2019-05-30 12:18:12.918249 I | rafthttp: added peer 1
+2019-05-30 12:18:12.918390 I | rafthttp: starting peer 2...
+2019-05-30 12:18:12.918416 I | rafthttp: started HTTP pipelining with peer 2
+2019-05-30 12:18:12.919072 I | rafthttp: started peer 2
+2019-05-30 12:18:12.919089 I | rafthttp: added peer 2
+2019-05-30 12:18:12.919195 I | rafthttp: started streaming with peer 1 (stream Message reader)
+TRACE[05-30|12:18:12.919] Adding static node                       node="enode://0ba6b9f606a43a95edc6247cdb1c1e105145817be7bcafd6b2c0ba15d58145f0dc1a194f70ba73cd6f4cdd6864edc7687f311254c7555cc32e4d45aeb1b80416@127.0.0.1:0?discport=21001&raftport=50402"
+TRACE[05-30|12:18:12.919] Adding static node                       node="enode://579f786d4e2830bbcc02815a27e8a9bacccc9605df4dc6f20bcc1a6eb391e7225fff7cb83e5b4ecd1f3a94d8b733803f2f66b7e871961e7b029e22c155c3a778@127.0.0.1:0?discport=21002&raftport=50403"
+2019-05-30 12:18:12.919581 I | rafthttp: starting peer 3...
+2019-05-30 12:18:12.919600 I | rafthttp: started HTTP pipelining with peer 3
+2019-05-30 12:18:12.920370 I | rafthttp: started peer 3
+2019-05-30 12:18:12.920397 I | rafthttp: added peer 3
+raft2019/05/30 12:18:12 INFO: 4 became follower at term 0
+raft2019/05/30 12:18:12 INFO: newRaft 4 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2019/05/30 12:18:12 INFO: 4 became follower at term 1
+TRACE[05-30|12:18:12.920] Quorum permissioning                     id=c39143f98d04e97b addr=127.0.0.1:49530 conn=inbound    EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 Current Node ID=c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest=nil                                                                                                                                                                                  Connection ID=c39143f98d04e97b Connection String=c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5
+TRACE[05-30|12:18:12.920] Node Permissioning is Enabled.           id=c39143f98d04e97b addr=127.0.0.1:49530 conn=inbound
+DEBUG[05-30|12:18:12.920] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 file=permissioned-nodes.json
+2019-05-30 12:18:12.921068 I | rafthttp: started streaming with peer 2 (writer)
+2019-05-30 12:18:12.921086 I | rafthttp: started streaming with peer 2 (writer)
+2019-05-30 12:18:12.921111 I | rafthttp: started streaming with peer 2 (stream MsgApp v2 reader)
+2019-05-30 12:18:12.921235 I | rafthttp: started streaming with peer 2 (stream Message reader)
+2019-05-30 12:18:12.921358 I | rafthttp: started streaming with peer 1 (writer)
+DEBUG[05-30|12:18:12.921] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:12.921] isNodePermissioned                       connection=INCOMING nodename=c39143f98d04e97bd9e31ac1e36cbeb5 ALLOWED-BY=c75f7dcb9fd6063f0ada0998f512a992
+2019-05-30 12:18:12.921376 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+2019-05-30 12:18:12.921507 I | rafthttp: started streaming with peer 3 (writer)
+2019-05-30 12:18:12.921544 I | rafthttp: started streaming with peer 3 (writer)
+2019-05-30 12:18:12.921557 I | rafthttp: started streaming with peer 3 (stream MsgApp v2 reader)
+2019-05-30 12:18:12.921665 I | rafthttp: started streaming with peer 3 (stream Message reader)
+DEBUG[05-30|12:18:12.923] InProc registered                        service=&{node:0xc000227180} namespace=admin
+DEBUG[05-30|12:18:12.949] InProc registered                        service=&{node:0xc000227180} namespace=admin
+DEBUG[05-30|12:18:12.965] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[05-30|12:18:12.966] Adding p2p peer                          name=Geth/v1.8.18-stable-...                                           addr=127.0.0.1:49530 peers=1
+TRACE[05-30|12:18:13.223] connection set up                        id=c39143f98d04e97b addr=127.0.0.1:49530 conn=inbound    inbound=true
+2019-05-30 12:18:13.025055 I | rafthttp: peer 1 became active
+2019-05-30 12:18:13.224094 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+2019-05-30 12:18:13.224582 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+DEBUG[05-30|12:18:13.217] InProc registered                        service=&{node:0xc000227180}                                                 namespace=debug
+TRACE[05-30|12:18:13.224] Starting protocol eth/63                 id=c39143f98d04e97b conn=inbound
+DEBUG[05-30|12:18:13.224] InProc registered                        service=&{stack:0xc000227180}                                                namespace=web3
+DEBUG[05-30|12:18:13.224] InProc registered                        service=&{b:0xc000247870}                                                    namespace=eth
+DEBUG[05-30|12:18:13.224] InProc registered                        service=&{b:0xc000247870}                                                    namespace=eth
+DEBUG[05-30|12:18:13.225] InProc registered                        service="&{b:0xc000247870 nonceLock:0xc0002bfa40}"                           namespace=eth
+DEBUG[05-30|12:18:13.253] InProc registered                        service=&{b:0xc000247870}                                                    namespace=txpool
+2019-05-30 12:18:13.226748 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+2019-05-30 12:18:13.354240 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+INFO [05-30|12:18:13.224] ignoring expected ConfChangeAddNode for initial peer raft id=1
+DEBUG[05-30|12:18:13.224] Ethereum peer connected                  id=c39143f98d04e97b conn=inbound    name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+DEBUG[05-30|12:18:13.354] InProc registered                        service=&{b:0xc000247870}                                                    namespace=debug
+DEBUG[05-30|12:18:13.354] InProc registered                        service=&{b:0xc000247870}                                                    namespace=debug
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{am:0xc000299110}                                                   namespace=eth
+DEBUG[05-30|12:18:13.355] InProc registered                        service="&{am:0xc000299110 nonceLock:0xc0002bfa40 b:0xc000247870}"           namespace=personal
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{ethash:0xc00028c700}                                               namespace=eth
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{ethash:0xc00028c700}                                               namespace=ethash
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{e:0xc00028c8c0}                                                    namespace=eth
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{e:0xc00028c8c0}                                                    namespace=eth
+DEBUG[05-30|12:18:13.355] InProc registered                        service="&{d:0xc000032820 mux:0xc0003ee1b0 installSyncSubscription:0xc018d476e0 uninstallSyncSubscription:0xc018d47740}" namespace=eth
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{e:0xc00028c8c0}                                                                                                namespace=miner
+DEBUG[05-30|12:18:13.355] InProc registered                        service="&{backend:0xc000247870 mux:0xc0003ee1b0 quit:<nil> chainDb:0xc0000d0420 events:0xc000305ae0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{eth:0xc00028c8c0}                                                                                                                     namespace=admin
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{eth:0xc00028c8c0}                                                                                                                     namespace=debug
+DEBUG[05-30|12:18:13.355] InProc registered                        service="&{config:0xc0000bc280 eth:0xc00028c8c0}"                                                                                               namespace=debug
+DEBUG[05-30|12:18:13.355] InProc registered                        service="&{net:0xc000227400 networkVersion:10}"                                                                                                 namespace=net
+DEBUG[05-30|12:18:13.355] InProc registered                        service=&{raftService:0xc000290ee0}                                                                                                             namespace=raft
+DEBUG[05-30|12:18:13.355] IPC registered                           namespace=admin
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=admin
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=web3
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=txpool
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=personal
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=ethash
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=miner
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=admin
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=net
+DEBUG[05-30|12:18:13.356] IPC registered                           namespace=raft
+INFO [05-30|12:18:13.356] IPC endpoint opened                      url=/Users/denny/Desktop/Fubon/example/qdata/dd4/geth.ipc
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=admin
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=admin
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=web3
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=txpool
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=personal
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=miner
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=admin
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=net
+DEBUG[05-30|12:18:13.357] HTTP registered                          namespace=raft
+INFO [05-30|12:18:13.357] HTTP endpoint opened                     url=http://0.0.0.0:22003                                  cors= vhosts=localhost
+WARN [05-30|12:18:13.357] ------------------------------------------------------------------- 
+WARN [05-30|12:18:13.357] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [05-30|12:18:13.357] This functionality is deprecated and will be removed in the future! 
+WARN [05-30|12:18:13.357] Please use explicit addresses! (can search via `geth account list`) 
+WARN [05-30|12:18:13.357] ------------------------------------------------------------------- 
+INFO [05-30|12:18:13.354] start snapshot                           applied index=0 last snapshot index=0
+TRACE[05-30|12:18:13.369] Registering sync peer                    peer=c39143f98d04e97b
+TRACE[05-30|12:18:13.372] Accepted connection                      addr=127.0.0.1:49584
+TRACE[05-30|12:18:13.410] Quorum permissioning                     id=995dbe18829f1aff addr=127.0.0.1:49584 conn=inbound    EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 Current Node ID=c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest=nil                                                                                                                                                                                  Connection ID=995dbe18829f1aff Connection String=995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2
+TRACE[05-30|12:18:13.641] Node Permissioning is Enabled.           id=995dbe18829f1aff addr=127.0.0.1:49584 conn=inbound
+DEBUG[05-30|12:18:13.793] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd4 file=permissioned-nodes.json
+DEBUG[05-30|12:18:13.800] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:13.802] isNodePermissioned                       connection=INCOMING nodename=995dbe18829f1affb75402e66571d97f ALLOWED-BY=c75f7dcb9fd6063f0ada0998f512a992
+2019-05-30 12:18:13.426428 I | rafthttp: peer 3 became active
+2019-05-30 12:18:13.808314 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message writer)
+2019-05-30 12:18:13.808378 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+2019-05-30 12:18:13.808396 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 reader)
+INFO [05-30|12:18:13.802] compacted log                            index=0
+INFO [05-30|12:18:13.813] persisted the latest applied index       index=1
+INFO [05-30|12:18:13.825] ignoring expected ConfChangeAddNode for initial peer raft id=2
+INFO [05-30|12:18:13.825] start snapshot                           applied index=1 last snapshot index=1
+2019-05-30 12:18:13.812127 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message reader)
+DEBUG[05-30|12:18:13.814] Adding p2p peer                          name=Geth/v1.8.18-stable-...                                           addr=127.0.0.1:49584 peers=2
+TRACE[05-30|12:18:13.828] connection set up                        id=995dbe18829f1aff addr=127.0.0.1:49584 conn=inbound    inbound=true
+TRACE[05-30|12:18:13.828] Starting protocol eth/63                 id=995dbe18829f1aff conn=inbound
+DEBUG[05-30|12:18:13.834] Ethereum peer connected                  id=995dbe18829f1aff conn=inbound    name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+TRACE[05-30|12:18:13.840] Registering sync peer                    peer=995dbe18829f1aff
+DEBUG[05-30|12:18:13.841] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+INFO [05-30|12:18:13.848] compacted log                            index=1
+INFO [05-30|12:18:13.852] persisted the latest applied index       index=2
+INFO [05-30|12:18:13.861] ignoring expected ConfChangeAddNode for initial peer raft id=3
+INFO [05-30|12:18:13.872] start snapshot                           applied index=2 last snapshot index=2
+INFO [05-30|12:18:13.886] compacted log                            index=2
+INFO [05-30|12:18:13.887] persisted the latest applied index       index=3
+INFO [05-30|12:18:13.887] ignoring expected ConfChangeAddNode for initial peer raft id=4
+INFO [05-30|12:18:13.887] start snapshot                           applied index=3 last snapshot index=3
+INFO [05-30|12:18:13.903] compacted log                            index=3
+INFO [05-30|12:18:13.904] persisted the latest applied index       index=4
+2019-05-30 12:18:13.948944 I | rafthttp: peer 2 became active
+2019-05-30 12:18:13.948979 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 writer)
+2019-05-30 12:18:13.956110 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message writer)
+DEBUG[05-30|12:18:14.469] Couldn't add port mapping                proto=tcp extport=21003 intport=21003 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+2019-05-30 12:18:14.688635 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message reader)
+2019-05-30 12:18:14.704779 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 reader)
+raft2019/05/30 12:18:15 INFO: 4 [term: 1] received a MsgVote message with higher term from 1 [term: 2]
+raft2019/05/30 12:18:15 INFO: 4 became follower at term 2
+raft2019/05/30 12:18:15 INFO: 4 [logterm: 1, index: 4, vote: 0] cast MsgVote for 1 [logterm: 1, index: 4] at term 2
+raft2019/05/30 12:18:15 INFO: raft.node: 4 elected leader 1 at term 2
+INFO [05-30|12:18:15.144] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [05-30|12:18:15.152] persisted the latest applied index       index=5
+INFO [05-30|12:18:16.653] Unlocked account                         address=0x9186eb3d20Cbd1F5f992a950d808C4495153ABd5
+DEBUG[05-30|12:18:32.362] Recalculated downloader QoS values       rtt=20s confidence=0.750 ttl=1m0s
+TRACE[05-30|12:18:42.373] Dial task done                           task="wait for dial hist expire (29.678914961s)"
+TRACE[05-30|12:18:42.373] New dial task                            task="wait for dial hist expire (319.759918ms)"
+TRACE[05-30|12:18:42.693] Dial task done                           task="wait for dial hist expire (319.759918ms)"
+TRACE[05-30|12:18:42.693] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:18:42.693] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:18:42.693] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:18:42.693] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:18:42.693] New dial task                            task="wait for dial hist expire (29.999997554s)"
+DEBUG[05-30|12:18:52.365] Recalculated downloader QoS values       rtt=20s confidence=0.875 ttl=1m0s
+DEBUG[05-30|12:19:12.368] Recalculated downloader QoS values       rtt=20s confidence=0.938 ttl=1m0s
+TRACE[05-30|12:19:12.695] Dial task done                           task="wait for dial hist expire (29.999997554s)"
+TRACE[05-30|12:19:12.695] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:19:12.695] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:19:12.695] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:19:12.695] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:19:12.695] New dial task                            task="wait for dial hist expire (29.999997913s)"
+DEBUG[05-30|12:19:32.369] Recalculated downloader QoS values       rtt=20s confidence=0.969 ttl=1m0s
+INFO [05-30|12:19:41.723] Etherbase automatically configured       address=0x9186eb3d20Cbd1F5f992a950d808C4495153ABd5
+TRACE[05-30|12:19:42.697] Dial task done                           task="wait for dial hist expire (29.999997913s)"
+TRACE[05-30|12:19:42.697] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:19:42.697] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:19:42.697] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:19:42.697] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:19:42.697] New dial task                            task="wait for dial hist expire (29.999997623s)"
+DEBUG[05-30|12:19:52.370] Recalculated downloader QoS values       rtt=20s confidence=0.984 ttl=1m0s
+DEBUG[05-30|12:20:12.374] Recalculated downloader QoS values       rtt=20s confidence=0.992 ttl=1m0s
+TRACE[05-30|12:20:12.698] Dial task done                           task="wait for dial hist expire (29.999997623s)"
+TRACE[05-30|12:20:12.699] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:20:12.699] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:20:12.699] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:20:12.699] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:20:12.699] New dial task                            task="wait for dial hist expire (29.999997074s)"
+DEBUG[05-30|12:20:32.375] Recalculated downloader QoS values       rtt=20s confidence=0.996 ttl=1m0s
+TRACE[05-30|12:20:42.702] Dial task done                           task="wait for dial hist expire (29.999997074s)"
+TRACE[05-30|12:20:42.702] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:20:42.702] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:20:42.702] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:20:42.702] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:20:42.702] New dial task                            task="wait for dial hist expire (29.999997875s)"
+DEBUG[05-30|12:20:52.376] Recalculated downloader QoS values       rtt=20s confidence=0.998 ttl=1m0s
+DEBUG[05-30|12:21:12.376] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+TRACE[05-30|12:21:12.703] Dial task done                           task="wait for dial hist expire (29.999997875s)"
+TRACE[05-30|12:21:12.703] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:21:12.704] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:21:12.705] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:21:12.705] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:21:12.705] New dial task                            task="wait for dial hist expire (29.999997907s)"
+DEBUG[05-30|12:21:32.378] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:21:42.706] Dial task done                           task="wait for dial hist expire (29.999997907s)"
+TRACE[05-30|12:21:42.706] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:21:42.707] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:21:42.707] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:21:42.707] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:21:42.707] New dial task                            task="wait for dial hist expire (29.999996695s)"
+DEBUG[05-30|12:21:52.383] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:22:12.384] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:22:12.708] Dial task done                           task="wait for dial hist expire (29.999996695s)"
+TRACE[05-30|12:22:12.708] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:22:12.708] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:22:12.708] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:22:12.708] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:22:12.708] New dial task                            task="wait for dial hist expire (29.99999781s)"
+DEBUG[05-30|12:22:32.384] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:22:42.709] Dial task done                           task="wait for dial hist expire (29.99999781s)"
+TRACE[05-30|12:22:42.709] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:22:42.709] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:22:42.709] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:22:42.709] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:22:42.709] New dial task                            task="wait for dial hist expire (29.999996093s)"
+DEBUG[05-30|12:22:52.387] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:23:12.389] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:23:12.717] Dial task done                           task="wait for dial hist expire (29.999996093s)"
+TRACE[05-30|12:23:12.717] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:23:12.717] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:23:12.718] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:23:12.718] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:23:12.718] New dial task                            task="wait for dial hist expire (29.999997236s)"
+DEBUG[05-30|12:23:32.391] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:23:42.719] Dial task done                           task="wait for dial hist expire (29.999997236s)"
+TRACE[05-30|12:23:42.719] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:23:42.719] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:23:42.719] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:23:42.719] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:23:42.719] New dial task                            task="wait for dial hist expire (29.999998269s)"
+DEBUG[05-30|12:23:52.396] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:24:12.401] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:24:12.720] Dial task done                           task="wait for dial hist expire (29.999998269s)"
+TRACE[05-30|12:24:12.720] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:24:12.721] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:24:12.723] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:24:12.725] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:24:12.725] New dial task                            task="wait for dial hist expire (29.99999686s)"
+DEBUG[05-30|12:24:32.402] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:24:42.727] Dial task done                           task="wait for dial hist expire (29.99999686s)"
+TRACE[05-30|12:24:42.728] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:24:42.728] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:24:42.728] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:24:42.728] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:24:42.728] New dial task                            task="wait for dial hist expire (29.99999696s)"
+DEBUG[05-30|12:24:52.404] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:25:12.404] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:25:12.729] Dial task done                           task="wait for dial hist expire (29.99999696s)"
+TRACE[05-30|12:25:12.730] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:25:12.730] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:25:12.730] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:25:12.730] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:25:12.731] New dial task                            task="wait for dial hist expire (29.999997827s)"
+DEBUG[05-30|12:25:32.409] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:25:42.731] Dial task done                           task="wait for dial hist expire (29.999997827s)"
+TRACE[05-30|12:25:42.731] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:25:42.731] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:25:42.732] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:25:42.732] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:25:42.732] New dial task                            task="wait for dial hist expire (29.999997589s)"
+DEBUG[05-30|12:25:52.413] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:26:12.417] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:26:12.733] Dial task done                           task="wait for dial hist expire (29.999997589s)"
+TRACE[05-30|12:26:12.733] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:26:12.733] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:26:12.733] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:26:12.733] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:26:12.734] New dial task                            task="wait for dial hist expire (29.999997496s)"
+DEBUG[05-30|12:26:32.418] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:26:42.734] Dial task done                           task="wait for dial hist expire (29.999997496s)"
+TRACE[05-30|12:26:42.735] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:26:42.735] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:26:42.735] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:26:42.735] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:26:42.735] New dial task                            task="wait for dial hist expire (29.999997632s)"
+DEBUG[05-30|12:26:52.423] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:27:12.424] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:27:12.739] Dial task done                           task="wait for dial hist expire (29.999997632s)"
+TRACE[05-30|12:27:12.739] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:27:12.739] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:27:12.739] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:27:12.739] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:27:12.739] New dial task                            task="wait for dial hist expire (29.999998194s)"
+DEBUG[05-30|12:27:32.425] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:27:42.745] Dial task done                           task="wait for dial hist expire (29.999998194s)"
+TRACE[05-30|12:27:42.745] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:27:42.745] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:27:42.745] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:27:42.745] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:27:42.745] New dial task                            task="wait for dial hist expire (29.999998173s)"
+DEBUG[05-30|12:27:52.426] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:28:12.429] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:28:12.750] Dial task done                           task="wait for dial hist expire (29.999998173s)"
+TRACE[05-30|12:28:12.750] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:28:12.750] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:28:12.750] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:28:12.750] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:28:12.751] New dial task                            task="wait for dial hist expire (29.999991638s)"
+DEBUG[05-30|12:28:32.431] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:28:42.752] Dial task done                           task="wait for dial hist expire (29.999991638s)"
+TRACE[05-30|12:28:42.753] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:28:42.753] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:28:42.753] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:28:42.753] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:28:42.753] New dial task                            task="wait for dial hist expire (29.999997578s)"
+DEBUG[05-30|12:28:52.435] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:29:12.438] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[05-30|12:29:12.753] Dial task done                           task="wait for dial hist expire (29.999997578s)"
+TRACE[05-30|12:29:12.754] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:29:12.754] Dial error                               task="staticdial 7577115fd9184a27 127.0.0.1:0"     err="dial tcp 127.0.0.1:0: connect: can't assign requested address"
+DEBUG[05-30|12:29:12.754] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:29:12.754] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:0"
+TRACE[05-30|12:29:12.755] New dial task                            task="wait for dial hist expire (29.999995685s)"

@@ -1,0 +1,258 @@
+appending output to nohup.out
+DEBUG[05-30|12:18:12.310] Sanitizing Go's GC trigger               percent=100
+INFO [05-30|12:18:12.313] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[05-30|12:18:12.313] FS scan times                            list=76.382µs set=7.285µs diff=4.768µs
+TRACE[05-30|12:18:12.314] Handled keystore changes                 time=183.286µs
+TRACE[05-30|12:18:12.314] Started watching keystore folder         path=/Users/denny/Desktop/Fubon/example/qdata/dd3/keystore
+INFO [05-30|12:18:12.338] Starting peer-to-peer node               instance=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+INFO [05-30|12:18:12.338] Allocated cache and file handles         database=/Users/denny/Desktop/Fubon/example/qdata/dd3/geth/chaindata cache=768 handles=4611686018427387903
+INFO [05-30|12:18:12.364] Initialised chain configuration          config="{ChainID: 10 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 1 EIP155: 0 EIP158: 1 Byzantium: 1 IsQuorum: true Constantinople: <nil> Engine: unknown}"
+WARN [05-30|12:18:12.405] Ethash used in full fake mode 
+INFO [05-30|12:18:12.541] Initialising Ethereum protocol           versions="[63 62]" network=10
+INFO [05-30|12:18:12.700] Loaded most recent local header          number=0 hash=6a6605…6243a2 td=0 age=50y1mo2w
+INFO [05-30|12:18:12.725] Loaded most recent local full block      number=0 hash=6a6605…6243a2 td=0 age=50y1mo2w
+INFO [05-30|12:18:12.731] Loaded most recent local fast block      number=0 hash=6a6605…6243a2 td=0 age=50y1mo2w
+DEBUG[05-30|12:18:12.732] Reinjecting stale transactions           count=0
+INFO [05-30|12:18:12.733] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[05-30|12:18:12.733] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [05-30|12:18:12.761] starting raft protocol handler 
+INFO [05-30|12:18:12.761] loaded the latest applied index          lastAppliedIndex=0
+INFO [05-30|12:18:12.761] replaying WAL 
+DEBUG[05-30|12:18:12.792] TCP listener up                          addr=[::]:21002
+INFO [05-30|12:18:12.911] New local node record                    seq=1 id=c39143f98d04e97b ip=127.0.0.1 udp=0 tcp=21002
+INFO [05-30|12:18:12.912] Started P2P networking                   self="enode://579f786d4e2830bbcc02815a27e8a9bacccc9605df4dc6f20bcc1a6eb391e7225fff7cb83e5b4ecd1f3a94d8b733803f2f66b7e871961e7b029e22c155c3a778@127.0.0.1:21002?discport=0"
+WARN [05-30|12:18:12.912] Removing static dial candidate           id=0x44d9af0        addr=127.0.0.1:21002 err="is self"
+TRACE[05-30|12:18:12.912] New dial task                            task="staticdial 995dbe18829f1aff 127.0.0.1:21001"
+TRACE[05-30|12:18:12.912] New dial task                            task="staticdial c75f7dcb9fd6063f 127.0.0.1:21003"
+TRACE[05-30|12:18:12.912] New dial task                            task="staticdial 7577115fd9184a27 127.0.0.1:21000"
+TRACE[05-30|12:18:12.915] Dial error                               task="staticdial 995dbe18829f1aff 127.0.0.1:21001" err="dial tcp 127.0.0.1:21001: connect: connection refused"
+DEBUG[05-30|12:18:12.916] Can't resolve node                       id=0x44d9af0        err="discovery is disabled"
+TRACE[05-30|12:18:12.918] Dial task done                           task="staticdial 995dbe18829f1aff 127.0.0.1:21001"
+TRACE[05-30|12:18:12.922] Quorum permissioning                     id=7577115fd9184a27 addr=127.0.0.1:21000 conn=staticdial EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd3 Current Node ID=c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest="enode://ac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef@127.0.0.1:21000?discport=0&raftport=50401" Connection ID=7577115fd9184a27 Connection String=7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966
+TRACE[05-30|12:18:12.937] Node Permissioning is Enabled.           id=7577115fd9184a27 addr=127.0.0.1:21000 conn=staticdial
+TRACE[05-30|12:18:12.937] Node Permissioning                       Connection Direction=OUTGOING
+DEBUG[05-30|12:18:12.937] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd3 file=permissioned-nodes.json
+INFO [05-30|12:18:12.937] loading WAL                              term=0 index=0
+DEBUG[05-30|12:18:12.939] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:12.939] isNodePermissioned                       connection=OUTGOING nodename=7577115fd9184a27da527128d8dba507 ALLOWED-BY=c39143f98d04e97bd9e31ac1e36cbeb5
+TRACE[05-30|12:18:12.933] Quorum permissioning                     id=c75f7dcb9fd6063f addr=127.0.0.1:21003 conn=staticdial EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd3 Current Node ID=c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest="enode://3d9ca5956b38557aba991e31cf510d4df641dce9cc26bfeb7de082f0c07abb6ede3a58410c8f249dabeecee4ad3979929ac4c7c496ad20b8cfdd061b7401b4f5@127.0.0.1:21003?discport=0&raftport=50404" Connection ID=c75f7dcb9fd6063f Connection String=c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e
+TRACE[05-30|12:18:12.939] Node Permissioning is Enabled.           id=c75f7dcb9fd6063f addr=127.0.0.1:21003 conn=staticdial
+TRACE[05-30|12:18:12.939] Node Permissioning                       Connection Direction=OUTGOING
+DEBUG[05-30|12:18:12.939] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd3 file=permissioned-nodes.json
+DEBUG[05-30|12:18:12.939] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:12.965] isNodePermissioned                       connection=OUTGOING nodename=c75f7dcb9fd6063f0ada0998f512a992 ALLOWED-BY=c39143f98d04e97bd9e31ac1e36cbeb5
+DEBUG[05-30|12:18:12.965] Adding p2p peer                          name=Geth/v1.8.18-stable-... addr=127.0.0.1:21003 peers=1
+DEBUG[05-30|12:18:13.218] Adding p2p peer                          name=Geth/v1.8.18-stable-... addr=127.0.0.1:21000 peers=2
+TRACE[05-30|12:18:13.224] connection set up                        id=7577115fd9184a27 addr=127.0.0.1:21000 conn=staticdial inbound=false
+TRACE[05-30|12:18:13.224] Dial task done                           task="staticdial 7577115fd9184a27 127.0.0.1:21000"
+TRACE[05-30|12:18:13.218] Starting protocol eth/63                 id=c75f7dcb9fd6063f conn=staticdial
+TRACE[05-30|12:18:13.219] connection set up                        id=c75f7dcb9fd6063f addr=127.0.0.1:21003 conn=staticdial inbound=false
+TRACE[05-30|12:18:13.224] Dial task done                           task="staticdial c75f7dcb9fd6063f 127.0.0.1:21003"
+TRACE[05-30|12:18:13.225] New dial task                            task="wait for dial hist expire (29.693053265s)"
+DEBUG[05-30|12:18:13.224] Ethereum peer connected                  id=c75f7dcb9fd6063f conn=staticdial name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+TRACE[05-30|12:18:13.224] Starting protocol eth/63                 id=7577115fd9184a27 conn=staticdial
+INFO [05-30|12:18:13.252] startRaft                                raft ID=3
+DEBUG[05-30|12:18:13.355] Ethereum peer connected                  id=7577115fd9184a27 conn=staticdial name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+INFO [05-30|12:18:13.355] starting a new raft log                  initial cluster size of=4
+2019-05-30 12:18:13.356342 I | rafthttp: starting peer 1...
+2019-05-30 12:18:13.356465 I | rafthttp: started HTTP pipelining with peer 1
+TRACE[05-30|12:18:13.359] Adding static node                       node="enode://ac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef@127.0.0.1:0?discport=21000&raftport=50401"
+2019-05-30 12:18:13.359874 I | rafthttp: started streaming with peer 1 (writer)
+2019-05-30 12:18:13.361338 I | rafthttp: started streaming with peer 1 (writer)
+2019-05-30 12:18:13.361370 I | rafthttp: started peer 1
+2019-05-30 12:18:13.361404 I | rafthttp: added peer 1
+2019-05-30 12:18:13.361416 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+2019-05-30 12:18:13.361647 I | rafthttp: starting peer 2...
+2019-05-30 12:18:13.361704 I | rafthttp: started streaming with peer 1 (stream Message reader)
+2019-05-30 12:18:13.361723 I | rafthttp: started HTTP pipelining with peer 2
+TRACE[05-30|12:18:13.361] Adding static node                       node="enode://0ba6b9f606a43a95edc6247cdb1c1e105145817be7bcafd6b2c0ba15d58145f0dc1a194f70ba73cd6f4cdd6864edc7687f311254c7555cc32e4d45aeb1b80416@127.0.0.1:0?discport=21001&raftport=50402"
+2019-05-30 12:18:13.365128 I | rafthttp: started peer 2
+2019-05-30 12:18:13.365171 I | rafthttp: added peer 2
+2019-05-30 12:18:13.365301 I | rafthttp: starting peer 4...
+2019-05-30 12:18:13.365324 I | rafthttp: started HTTP pipelining with peer 4
+TRACE[05-30|12:18:13.366] Adding static node                       node="enode://3d9ca5956b38557aba991e31cf510d4df641dce9cc26bfeb7de082f0c07abb6ede3a58410c8f249dabeecee4ad3979929ac4c7c496ad20b8cfdd061b7401b4f5@127.0.0.1:0?discport=21003&raftport=50404"
+2019-05-30 12:18:13.366367 I | rafthttp: started streaming with peer 2 (writer)
+2019-05-30 12:18:13.366388 I | rafthttp: started streaming with peer 2 (stream MsgApp v2 reader)
+2019-05-30 12:18:13.366403 I | rafthttp: started streaming with peer 2 (stream Message reader)
+2019-05-30 12:18:13.366551 I | rafthttp: started streaming with peer 2 (writer)
+2019-05-30 12:18:13.368114 I | rafthttp: started streaming with peer 4 (writer)
+2019-05-30 12:18:13.370245 I | rafthttp: started peer 4
+2019-05-30 12:18:13.370284 I | rafthttp: added peer 4
+raft2019/05/30 12:18:13 INFO: 3 became follower at term 0
+raft2019/05/30 12:18:13 INFO: newRaft 3 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2019/05/30 12:18:13 INFO: 3 became follower at term 1
+DEBUG[05-30|12:18:13.370] InProc registered                        service=&{node:0xc00021b180} namespace=admin
+DEBUG[05-30|12:18:13.370] InProc registered                        service=&{node:0xc00021b180} namespace=admin
+DEBUG[05-30|12:18:13.370] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[05-30|12:18:13.370] InProc registered                        service=&{node:0xc00021b180}                                                 namespace=debug
+DEBUG[05-30|12:18:13.370] InProc registered                        service=&{stack:0xc00021b180}                                                namespace=web3
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{b:0xc000068d60}                                                    namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{b:0xc000068d60}                                                    namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service="&{b:0xc000068d60 nonceLock:0xc0002bfad0}"                           namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{b:0xc000068d60}                                                    namespace=txpool
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{b:0xc000068d60}                                                    namespace=debug
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{b:0xc000068d60}                                                    namespace=debug
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{am:0xc00029d110}                                                   namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service="&{am:0xc00029d110 nonceLock:0xc0002bfad0 b:0xc000068d60}"           namespace=personal
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{ethash:0xc00027e700}                                               namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{ethash:0xc00027e700}                                               namespace=ethash
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{e:0xc00027e8c0}                                                    namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service=&{e:0xc00027e8c0}                                                    namespace=eth
+DEBUG[05-30|12:18:13.371] InProc registered                        service="&{d:0xc0001fc340 mux:0xc0001c5a70 installSyncSubscription:0xc00048b440 uninstallSyncSubscription:0xc00048b4a0}" namespace=eth
+DEBUG[05-30|12:18:13.372] InProc registered                        service=&{e:0xc00027e8c0}                                                                                                namespace=miner
+DEBUG[05-30|12:18:13.372] InProc registered                        service="&{backend:0xc000068d60 mux:0xc0001c5a70 quit:<nil> chainDb:0xc0000c0420 events:0xc0002a2b40 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[05-30|12:18:13.372] InProc registered                        service=&{eth:0xc00027e8c0}                                                                                                                     namespace=admin
+DEBUG[05-30|12:18:13.372] InProc registered                        service=&{eth:0xc00027e8c0}                                                                                                                     namespace=debug
+DEBUG[05-30|12:18:13.372] InProc registered                        service="&{config:0xc0001fe3c0 eth:0xc00027e8c0}"                                                                                               namespace=debug
+DEBUG[05-30|12:18:13.372] InProc registered                        service="&{net:0xc00021b400 networkVersion:10}"                                                                                                 namespace=net
+DEBUG[05-30|12:18:13.372] InProc registered                        service=&{raftService:0xc0003bcb60}                                                                                                             namespace=raft
+DEBUG[05-30|12:18:13.372] IPC registered                           namespace=admin
+DEBUG[05-30|12:18:13.372] IPC registered                           namespace=admin
+2019-05-30 12:18:13.374024 I | rafthttp: started streaming with peer 4 (writer)
+2019-05-30 12:18:13.374107 I | rafthttp: started streaming with peer 4 (stream MsgApp v2 reader)
+TRACE[05-30|12:18:13.374] Registering sync peer                    peer=c75f7dcb9fd6063f
+2019-05-30 12:18:13.374237 I | rafthttp: started streaming with peer 4 (stream Message reader)
+TRACE[05-30|12:18:13.374] Accepted connection                      addr=127.0.0.1:49585
+DEBUG[05-30|12:18:13.376] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=web3
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=txpool
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.394] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=personal
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=ethash
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=miner
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=eth
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=admin
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=debug
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=net
+DEBUG[05-30|12:18:13.395] IPC registered                           namespace=raft
+INFO [05-30|12:18:13.396] IPC endpoint opened                      url=/Users/denny/Desktop/Fubon/example/qdata/dd3/geth.ipc
+DEBUG[05-30|12:18:13.398] HTTP registered                          namespace=admin
+DEBUG[05-30|12:18:13.398] HTTP registered                          namespace=admin
+DEBUG[05-30|12:18:13.398] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.399] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.399] HTTP registered                          namespace=web3
+DEBUG[05-30|12:18:13.399] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.399] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=txpool
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=personal
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=eth
+DEBUG[05-30|12:18:13.400] HTTP registered                          namespace=miner
+DEBUG[05-30|12:18:13.793] HTTP registered                          namespace=eth
+TRACE[05-30|12:18:13.428] Quorum permissioning                     id=995dbe18829f1aff addr=127.0.0.1:49585 conn=inbound    EnableNodePermission=true DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd3 Current Node ID=c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 Node Name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5 Dialed Dest=nil                                                                                                                                                                                  Connection ID=995dbe18829f1aff Connection String=995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2
+INFO [05-30|12:18:13.641] ignoring expected ConfChangeAddNode for initial peer raft id=1
+DEBUG[05-30|12:18:13.797] HTTP registered                          namespace=admin
+TRACE[05-30|12:18:13.798] Node Permissioning is Enabled.           id=995dbe18829f1aff addr=127.0.0.1:49585 conn=inbound
+2019-05-30 12:18:13.427216 I | rafthttp: peer 4 became active
+2019-05-30 12:18:13.808342 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+TRACE[05-30|12:18:13.800] Registering sync peer                    peer=7577115fd9184a27
+INFO [05-30|12:18:13.802] start snapshot                           applied index=0 last snapshot index=0
+2019-05-30 12:18:13.811120 I | rafthttp: peer 1 became active
+2019-05-30 12:18:13.811155 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+2019-05-30 12:18:13.812506 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message reader)
+2019-05-30 12:18:13.812531 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message writer)
+2019-05-30 12:18:13.812541 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 writer)
+DEBUG[05-30|12:18:13.808] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.808] parsePermissionedNodes                   DataDir=/Users/denny/Desktop/Fubon/example/qdata/dd3 file=permissioned-nodes.json
+DEBUG[05-30|12:18:13.808] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+DEBUG[05-30|12:18:13.812] HTTP registered                          namespace=debug
+DEBUG[05-30|12:18:13.813] HTTP registered                          namespace=net
+DEBUG[05-30|12:18:13.813] HTTP registered                          namespace=raft
+INFO [05-30|12:18:13.813] HTTP endpoint opened                     url=http://0.0.0.0:22002                                  cors= vhosts=localhost
+WARN [05-30|12:18:13.813] ------------------------------------------------------------------- 
+WARN [05-30|12:18:13.813] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [05-30|12:18:13.813] This functionality is deprecated and will be removed in the future! 
+WARN [05-30|12:18:13.813] Please use explicit addresses! (can search via `geth account list`) 
+WARN [05-30|12:18:13.813] ------------------------------------------------------------------- 
+DEBUG[05-30|12:18:13.813] isNodePermissioned                       permissionedList="[7577115fd9184a27da527128d8dba507e85f116b1f7e231ca8525fc9008a6966 995dbe18829f1affb75402e66571d97f340c8495b661a823f2c2145ca47d63c2 c39143f98d04e97bd9e31ac1e36cbeb565b061217930767886474e3cde903ac5 c75f7dcb9fd6063f0ada0998f512a992f3fb749857d758ffda1330e590fa915e]"
+DEBUG[05-30|12:18:13.820] isNodePermissioned                       connection=INCOMING nodename=995dbe18829f1affb75402e66571d97f ALLOWED-BY=c39143f98d04e97bd9e31ac1e36cbeb5
+DEBUG[05-30|12:18:14.375] Adding p2p peer                          name=Geth/v1.8.18-stable-...                                           addr=127.0.0.1:49585 peers=3
+2019-05-30 12:18:13.816835 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2019-05-30 12:18:14.449499 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+2019-05-30 12:18:14.449586 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+2019-05-30 12:18:14.449610 I | rafthttp: peer 2 became active
+TRACE[05-30|12:18:14.449] connection set up                        id=995dbe18829f1aff addr=127.0.0.1:49585 conn=inbound    inbound=true
+2019-05-30 12:18:14.449625 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message writer)
+2019-05-30 12:18:14.449655 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 writer)
+INFO [05-30|12:18:14.449] compacted log                            index=0
+INFO [05-30|12:18:14.449] persisted the latest applied index       index=1
+TRACE[05-30|12:18:14.449] Starting protocol eth/63                 id=995dbe18829f1aff conn=inbound
+DEBUG[05-30|12:18:14.449] Ethereum peer connected                  id=995dbe18829f1aff conn=inbound    name=Geth/v1.8.18-stable-124864e4(quorum-v2.2.1)/darwin-amd64/go1.11.5
+INFO [05-30|12:18:14.449] ignoring expected ConfChangeAddNode for initial peer raft id=2
+INFO [05-30|12:18:14.449] start snapshot                           applied index=1 last snapshot index=1
+INFO [05-30|12:18:14.459] compacted log                            index=1
+INFO [05-30|12:18:14.459] persisted the latest applied index       index=2
+INFO [05-30|12:18:14.459] ignoring expected ConfChangeAddNode for initial peer raft id=3
+INFO [05-30|12:18:14.459] start snapshot                           applied index=2 last snapshot index=2
+INFO [05-30|12:18:14.468] compacted log                            index=2
+INFO [05-30|12:18:14.468] persisted the latest applied index       index=3
+INFO [05-30|12:18:14.468] ignoring expected ConfChangeAddNode for initial peer raft id=4
+INFO [05-30|12:18:14.468] start snapshot                           applied index=3 last snapshot index=3
+INFO [05-30|12:18:14.477] compacted log                            index=3
+INFO [05-30|12:18:14.477] persisted the latest applied index       index=4
+2019-05-30 12:18:14.692297 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message reader)
+2019-05-30 12:18:14.692399 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 reader)
+TRACE[05-30|12:18:14.708] Registering sync peer                    peer=995dbe18829f1aff
+DEBUG[05-30|12:18:14.708] Relaxed downloader QoS values            rtt=20s confidence=0.333 ttl=1m0s
+DEBUG[05-30|12:18:14.896] Couldn't add port mapping                proto=tcp extport=21002 intport=21002 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+raft2019/05/30 12:18:15 INFO: 3 [term: 1] received a MsgVote message with higher term from 1 [term: 2]
+raft2019/05/30 12:18:15 INFO: 3 became follower at term 2
+raft2019/05/30 12:18:15 INFO: 3 [logterm: 1, index: 4, vote: 0] cast MsgVote for 1 [logterm: 1, index: 4] at term 2
+raft2019/05/30 12:18:15 INFO: raft.node: 3 elected leader 1 at term 2
+INFO [05-30|12:18:15.144] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [05-30|12:18:15.152] persisted the latest applied index       index=5
+INFO [05-30|12:18:17.103] Unlocked account                         address=0x0fBDc686b912d7722dc86510934589E0AAf3b55A
+DEBUG[05-30|12:18:32.740] Recalculated downloader QoS values       rtt=20s confidence=0.667 ttl=1m0s
+TRACE[05-30|12:18:42.947] Dial task done                           task="wait for dial hist expire (29.693053265s)"
+TRACE[05-30|12:18:42.947] New dial task                            task="wait for dial hist expire (277.677536ms)"
+TRACE[05-30|12:18:43.228] Dial task done                           task="wait for dial hist expire (277.677536ms)"
+DEBUG[05-30|12:18:52.741] Recalculated downloader QoS values       rtt=20s confidence=0.833 ttl=1m0s
+DEBUG[05-30|12:19:12.742] Recalculated downloader QoS values       rtt=20s confidence=0.917 ttl=1m0s
+DEBUG[05-30|12:19:32.743] Recalculated downloader QoS values       rtt=20s confidence=0.958 ttl=1m0s
+INFO [05-30|12:19:35.906] Etherbase automatically configured       address=0x0fBDc686b912d7722dc86510934589E0AAf3b55A
+DEBUG[05-30|12:19:52.747] Recalculated downloader QoS values       rtt=20s confidence=0.979 ttl=1m0s
+DEBUG[05-30|12:20:12.747] Recalculated downloader QoS values       rtt=20s confidence=0.990 ttl=1m0s
+DEBUG[05-30|12:20:32.750] Recalculated downloader QoS values       rtt=20s confidence=0.995 ttl=1m0s
+DEBUG[05-30|12:20:52.750] Recalculated downloader QoS values       rtt=20s confidence=0.997 ttl=1m0s
+DEBUG[05-30|12:21:12.751] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+DEBUG[05-30|12:21:32.753] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+DEBUG[05-30|12:21:52.753] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:22:12.754] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:22:32.754] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:22:52.759] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:23:12.762] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:23:32.766] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:23:52.772] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:24:12.775] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:24:32.776] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:24:52.782] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:25:12.783] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:25:32.784] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:25:52.787] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:26:12.788] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:26:32.790] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:26:52.791] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:27:12.793] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:27:32.797] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:27:52.801] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:28:12.806] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:28:32.809] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:28:52.823] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[05-30|12:29:12.826] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
